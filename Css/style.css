@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.gradient-text {
+    background: -webkit-linear-gradient(top, #d84641, #9b59b6, #0011ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.trips:hover .trips-t {
+    background: -webkit-linear-gradient(top, #d84641, #9b59b6, #0011ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.trips:hover {
+    transform: scale(1.1);
+}
+
+.icon{
+    color: #064250;
+    font-size: 50px;
+}
+.icon:hover{
+    color:#167f96
+}
+.bg-color{
+    background-color: #94ced5;
+}
+.bg-color2{
+    background-color: #4d8e95;
+    font-weight: normal;
+}
+
+.bg-img{
+    background-image: url(https://c0.wallpaperflare.com/preview/112/951/734/ancient-antique-architecture-art.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.card::after{
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #50d7e6;
+    opacity: 0.4;
+    transition: 1s;
+
+}
+.card1:hover::after{
+    height: 100%;
+    width: 100%;
+}
+.card1::before{
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    left: 0;
+    top: 0;
+    background-color: #50d7e6;
+    opacity: 0.4;
+    transition: 1s;
+
+}
+.card1:hover::before{
+    height: 100%;
+    width: 100%;
+}
+
+.card2{
+    width:25rem;
+    background-image: url(/images/axp-photography-__VGmXuVTBA-unsplash.jpg);
+    background-size: cover;
+    height: 27rem;
+    color: #ffff;
+    margin-bottom: 100px;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    transition:0.7s;
+}
+.overlay img{
+    margin-top: 135px;
+    border: 2px solid lavender;
+    transition:0.7s;
+}
+.overlay h4{
+    transition:0.7s;
+}
+.hov-card2{
+    transition:0.7s;
+}
+.hov-card2:hover{
+    transform:scale(0.9);
+}
+.hov-card2:hover .overlay{
+    background-color: rgba(46, 51, 148, 0.7);
+}
+.hov-card2:hover .overlay h4{
+    margin-top: 30px;
+}
+.hov-card2:hover .overlay img{
+    margin-top: 105px;
+}
+.line{
+    height: 4px;
+    width: 50px;
+    border-radius: 3px;
+    background-color: #08567a;
+    transition: 0.5s;
+}
+.grid-bg{
+    background: -webkit-linear-gradient(left, #e3f2f9, #fff );
+    width: 80%;
+}
+.card3:hover .line{
+    width: 110px;
+}
+.btn3{
+    color: #08567a;
+}
+.btn3:hover{
+    color: #ffff;
+    background-color: #08567a;
+}
+.clip{
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 18% 100%);
+}
+.clip2{
+    clip-path: polygon(0 0, 86% 0, 75% 100%, 0% 100%);
+}
+.card3 img{
+    transition: 0.7s;
+}
+.card3{
+    overflow: hidden;
+    box-shadow:2px 2px 15px 6px rgba(138, 138, 248, 0.365);
+}
+.card3 img:hover{
+    transform: scale(1.1);
+}

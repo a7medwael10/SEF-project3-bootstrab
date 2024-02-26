@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pro3</title>
+    <link rel="stylesheet" href="Css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/style.css">
+
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary z-3 position-fixed w-100 opacity-75" style="height: 12vh;">
+        <div class="container-fluid">
+          <img src="/images/2.png" class="rounded-circle" style="width: 60px; height: 60;" alt="..">
+          <a class="navbar-brand gradient-text border-end pe-2" href="#">EGYPT</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active text-info " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-info border border-2 border-info rounded trips" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="trips-t">T</span>rips
+                </a>
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item text-info" href="#">CAIRO</a></li>
+                  <li><a class="dropdown-item text-info" href="#">ALEX</a></li>
+                  <li><hr class="dropdown-divider color-info"></li>
+                  <li><a class="dropdown-item text-info" href="#">LUXOR</a></li>
+                  <li><a class="dropdown-item text-info" href="#">ASWAN</a></li>
+                  <li><a class="dropdown-item text-info" href="#">SHARM EL SHIKH</a></li>
+                  <li><a class="dropdown-item text-info" href="#">EL GLALA</a></li>
+                  <li><a class="dropdown-item text-info" href="#">MORE...</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="#">About</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 border border-info" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-info text-white mx-3" type="submit">Search</button>
+              <button class="btn btn-info text-white" type="submit" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="modal fade" id="loginModal" aria-labelledby="loginLabel">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-info">
+              <h5 class="modal-title text-white">Login</h5>
+              <button type="button" class="btn-close bg-white bg-opacity-50" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+
+              <label for="email" class="text-info mb-2">Email address</label>
+              <input type="email" class="form-control border-info" id="email">
+              <p class="text-secondary">We'll never share your email with anyone else.</p>
+              
+              <label for="Password" class="text-info mb-2">Password</label>
+              <input type="Password" class="form-control border-info" id="Password">
+
+              <div class="form-check form-switch mt-2">
+                <input class="form-check-input bg-info" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label text-info" for="flexSwitchCheckChecked">Remember me</label>
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary bg-info border-info">Login</button>
+              <button type="button" class="btn btn-secondary bg-info border-info" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>      
+      </div>
+
+      <div class="  position-relative  container-fluid">
+        <ul class="icons position-fixed z-3 top-50 end-0 translate-middle-y pe-2">
+          <li><a href="#" class="icon"><i class="fa-brands fa-square-facebook"></i></a></li>
+          <li><a href="#" class="icon"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+          <li><a href="#" class="icon"><i class="fa-brands fa-square-twitter"></i></a></li>
+          <li><a href="#" class="icon"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="#" class="icon"><i class="fa-brands fa-square-instagram"></i></a></li>
+        </ul>
+      </div>
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner ">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1572252009286-268acec5ca0a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="d-block w-100 vh-100" alt="...">
+                <div class="carousel-caption bg-opacity-25 bg-info " >
+                    <h3>Cairo</h3>
+                    <p>Thank you Cairo!</p>
+                    <button class="btn btn-info text-white mx-3" type="submit">Visit Us</button>
+                </div>
+            </div>
+            <div class="carousel-item" >
+                <img src="https://images.unsplash.com/photo-1633033254409-bd538e785f51?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="d-block w-100 vh-100" alt="...">
+                <div class="carousel-caption bg-opacity-25 bg-info " >
+                    <h3>Aswan</h3>
+                    <p>Thank you Aswan!</p>
+                    <button class="btn btn-info text-white mx-3" type="submit">Visit Us</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1647854879367-39bae4b777da?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100 vh-100" alt="...">
+                <div class="carousel-caption bg-opacity-25 bg-info " >
+                    <h3>Sharm Al Shikh</h3>
+                    <p>Thank you Sharm Al Shikh!</p>
+                    <button class="btn btn-info text-white mx-3" type="submit">Visit Us</button>
+                </div>
+            </div>
+            <div class="carousel-item bg-opacity-25 bg-info " >
+                <img src="https://eastern-el-galala-aquapark-ain-sokhna.redseahotelsegypt.com/data/Pictures/1903x595/11769/1176903/1176903079/picture-ain-sukhna-eastern-el-galala-aquapark-ain-sokhna-1.JPEG" class="d-block w-100 vh-100" alt="...">
+                <div class="carousel-caption bg-opacity-25 bg-info " >
+                    <h3>El Galala</h3>
+                    <p>Thank you El Galala!</p>
+                    <button class="btn btn-info text-white mx-3" type="submit">Visit Us</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="card w-100">
+      <div class="card-body  bg-color">
+        <h5 class="card-title gradient-text">WELCOME</h5>
+        <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-light text-info">Learn more</a>
+      </div>
+    </div>
+    <hr>
+
+    <div class="mt-4 p-3 bg-color2 text-white text-center rounded">
+      <h2>Popular destinations in Egypt</h2>
+    </div>
+    <br>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed shadow  bg-body-tertiary rounded gradient-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            GIZA CITY
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the class. This is the first item's accordion body.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed shadow   bg-body-tertiary rounded gradient-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            LUXOR CITY
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed shadow  bg-body-tertiary rounded gradient-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            SINAI PENINSULA
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="card">
+      <div class="card-header text-center text-white bg-color2 rounded">
+        <h2>Translate From Arabic To English </h2>
+      </div>
+      <div class="card-body bg-color rounded">
+        <h5 class="card-title text-white">Write and Translate <span style="color:#1b477d ;">Press Here</span></h5>
+        <button type="button" id="copy" class="btn btn-light text-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Copy to Clipboard" >Copy</button>
+        <div class="mb-3 mt-3">
+          <textarea class="form-control" placeholder="translate:" rows="5"></textarea>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="card">
+      <div class="card-header text-center text-white bg-color2 rounded">
+        <h2>Translate From Arabic To French </h2>
+      </div>
+      <div class="card-body bg-color rounded">
+        <h5 class="card-title text-white">Write and Translate <span style="color:#1b477d ;">Press Here</span></h5>
+        <button type="button" id="copy2" class="btn btn-light text-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Copy to Clipboard" >Copy</button>
+        <div class="mb-3 mt-3">
+          <textarea class="form-control" placeholder="translate:" rows="5"></textarea>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="card">
+      <div class="card-header text-center text-white bg-color2 rounded">
+        <h2>Translate From Arabic To German </h2>
+      </div>
+      <div class="card-body bg-color rounded">
+        <h5 class="card-title text-white">Write and Translate <span style="color:#1b477d ;">Press Here</span></h5>
+        <button type="button" id="copy3" class="btn btn-light text-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Copy to Clipboard">Copy</button>
+        <div class="mb-3 mt-3">
+          <textarea class="form-control" placeholder="translate:" rows="5"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="bg-img" style="height: 22rem;"></div>
+
+    <section class="bg-light">
+        <div>
+          <div class="p-3 bg-color2 text-white text-center rounded">
+            <h2 class="fs-1 ">Popular destinations in Egypt</h2>
+          </div>
+
+            <div class="row  justify-content-md-center ps-5 position-relative  ">
+              
+              <div class="col-lg-4 col-sm-12 p-4">
+                <div class="card card1 shadow ms-4" style="width:22rem; ">
+                  <img src="https://c1.wallpaperflare.com/preview/38/585/200/sphinx-egypt-ancient-egyptian.jpg" class="card-img-top px-2" style="height: 27rem;" alt="...">
+                  <div class="card-body">
+                      <span class="card-title text-info fs-4 me-5">CAIRO</span>
+                      <a href="#" class="btn btn-info text-white ms-5">Know more</a>
+                      <p class="card-text text-info me-5">Capital of Egypt</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-sm-12 p-4">
+                <div class="card card1 shadow ms-4" style="width:22rem; ">
+                  <img src="https://cdn.pixabay.com/photo/2016/06/09/23/38/alexandria-1446962_1280.jpg" class="card-img-top px-2" style="height: 27rem;"  alt="...">
+                  <div class="card-body">
+                      <span class="card-title text-info fs-4  me-5">ALEXANDRIA</span>
+                      <a href="#" class="btn btn-info text-white">Know more</a>
+                      <p class="card-text text-info me-5">The bride of mediterranean</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-sm-12 p-4">
+                <div class="card card1 shadow ms-4" style="width:22rem; ">
+                  <img src="https://cdn.pixabay.com/photo/2015/05/04/13/15/egypt-752405_960_720.jpg" class="card-img-top px-2" style="height: 27rem;" alt="...">
+                  <div class="card-body">
+                      <span class="card-title text-info fs-4  me-5">LUXOR</span>
+                      <a href="#" class="btn btn-info text-white ms-5">Know more</a>
+                      <p class="card-text text-info me-5">The capital of the Ancient Kingdom</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-sm-12 p-4">
+                <div class="card card1 shadow ms-4" style="width:22rem; ">
+                  <img src="https://cdn.pixabay.com/photo/2014/06/27/19/59/river-nile-378496_1280.jpg" class="card-img-top px-2" style="height: 27rem;" alt="...">
+                  <div class="card-body">
+                      <span class="card-title text-info fs-4 me-5">ASWAN</span>
+                      <a href="#" class="btn btn-info text-white ms-5">Know more</a>
+                      <p class="card-text text-info me-5">Nubian city in The South of Egypt</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-sm-12 p-4">
+                <div class="card card1 shadow ms-4" style="width:22rem; ">
+                  <img src="https://english.news.cn/20230912/e0b3dc3b58544151b994ea3d12bcbe5d/20230912e0b3dc3b58544151b994ea3d12bcbe5d_20230912282d7e301cdb4a13bf74ccd73fbbb510.jpg" class="card-img-top px-2" style="height: 27rem;" alt="...">
+                  <div class="card-body">
+                      <span class="card-title text-info fs-4  me-5">NEW CAPITAL</span>
+                      <a href="#" class="btn btn-info text-white">Know more</a>
+                      <p class="card-text text-info me-5">The New Administrative of Egypt </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-sm-12 p-4">
+                <div class="card card1 shadow ms-4" style="width:22rem; ">
+                  <img src="https://img.freepik.com/free-photo/background-vintage-blue-beautiful-sky_1203-4945.jpg?2&w=360&t=st=1708463477~exp=1708464077~hmac=7b15b687cd145afcd9861c6fe9059f0cf4ce1d36850479c6dc78df6f9dfda2da" class="card-img-top px-2" style="height: 27rem;" alt="...">
+                  <div class="card-body">
+                      <span class="card-title text-info fs-4  ">SHARM EL SHIKH</span>
+                      <a href="#" class="btn btn-info text-white ms-3">Know more</a>
+                      <p class="card-text text-info me-5">Beautiful City in Egypt</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-sm-12 p-4">
+                <div class="card card1 shadow ms-4" style="width:22rem; ">
+                  <img src="https://img.freepik.com/free-photo/lonely-person-walking-desert-near-sand-dunes-sunny-day_181624-44281.jpg?w=360&t=st=1708463548~exp=1708464148~hmac=0b2fb74ac1647bfe74160ea6934ff0be21e929d91a4ce4c7b7fa2aa8b3d7bc9f" class="card-img-top px-2" style="height: 27rem;" alt="...">
+                  <div class="card-body">
+                      <span class="card-title text-info fs-4  me-5">SIWA</span>
+                      <a href="#" class="btn btn-info text-white ms-5">Know more</a>
+                      <p class="card-text text-info me-5">Sunset Oasis</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-sm-12 p-4">
+                <div class="card card1 shadow ms-4" style="width:22rem; ">
+                  <img src="https://cdn.pixabay.com/photo/2021/01/06/23/09/beach-5895841_640.jpg" class="card-img-top px-2" style="height: 27rem;" alt="...">
+                  <div class="card-body">
+                      <span class="card-title text-info fs-4  me-5">HURGHADA</span>
+                      <a href="#" class="btn btn-info text-white">Know more</a>
+                      <p class="card-text text-info me-5">City on THe Red Sea</p>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+        </div>
+    </section>
+    <div class="bg-img mb-4" style="height: 18rem;"></div>
+    <hr>
+
+    <section class="bg-light mt-4 mb-5">
+        <div class="p-3 bg-color2 text-white text-center rounded">
+          <h2 class="fs-1 ">Thanks For</h2>
+        </div>
+
+          <div class="row  justify-content-md-center  p-5 position-relative">
+            <div class="hov-card2 col-lg-4 col-sm-12 ">
+              <div class="card2 shadow ms-4 ">
+                <div class="overlay p-4">
+                  <h4>All thanks and appreciation</h4>
+                  <p><i class="fa-regular fa-clock"></i> October 15, 2020</p>
+                  <img src="/images/axp-photography-__VGmXuVTBA-unsplash.jpg" class="w-25 rounded-circle" alt="">
+                  <p class="mb-0">Eng. Ahmed Wael</p>
+                  <span>Back-End</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hov-card2 col-lg-4 col-sm-12 ">
+              <div class="card2 shadow ms-4 ">
+                <div class="overlay p-4">
+                  <h4>All thanks and appreciation</h4>
+                  <p><i class="fa-regular fa-clock"></i> October 15, 2020</p>
+                  <img src="/images/axp-photography-__VGmXuVTBA-unsplash.jpg" class="w-25 rounded-circle" alt="">
+                  <p class="mb-0">Eng. Ahmed Wael</p>
+                  <span>Back-End</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hov-card2 col-lg-4 col-sm-12 ">
+              <div class="card2 shadow ms-4 ">
+                <div class="overlay p-4">
+                  <h4>All thanks and appreciation</h4>
+                  <p><i class="fa-regular fa-clock"></i> October 15, 2020</p>
+                  <img src="/images/axp-photography-__VGmXuVTBA-unsplash.jpg" class="w-25 rounded-circle" alt="">
+                  <p class="mb-0">Eng. Ahmed Wael</p>
+                  <span>Back-End</span>
+                </div>
+              </div>
+            </div>
+          </div>
+  </section>
+  <hr>
+  <div class="p-3 gradient-text text-center  rounded">
+    <h2 class="fs-1 ">EGYPT NEWS</h2>
+  </div>
+  
+  <div class="card card3 grid-bg mb-4 m-auto">
+    <div class="row g-5 ">
+      <div class="col-md-8 col-sm-12">
+        <div class="card-body p-5">
+          <span class="card-title fs-2" style="color: #08567a;">Podcast Title</span>
+          <p class="card-text mb-1"><small class="text-body-secondary"><i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2020</small></p>
+          <div class="line"></div>
+          <p class="card-text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo modi ab porro cupiditate dolor sapiente, qui tenetur iste repellendus obcaecati excepturi distinctio sint nesciunt quo doloremque laudantium mollitia corrupti Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minima architecto, nesciunt, ex aliquam.</p>
+          
+          <div style="margin-top: 80px;">
+            <button type="button" class="btn btn-secondary py-0 text-dark"><i class="fa-solid fa-tag"></i>Product</button>
+            <button type="button" class="btn btn-secondary py-0 text-dark "><i class="fa-solid fa-clock"></i>55 mins.</button>
+            <button type="button" class="btn btn-secondary py-0 btn3"><i class="fa-solid fa-play"></i>Play Episode</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <img src="/images/axp-photography-__VGmXuVTBA-unsplash.jpg" class="img-fluid clip rounded-end w-100 " style="height: 400px;" alt="...">
+      </div>
+    </div>
+  </div>
+
+  <div class="card card3 grid-bg mb-4 m-auto">
+    <div class="row g-5 ">
+      <div class="col-md-4 col-sm-12">
+        <img src="/images/axp-photography-__VGmXuVTBA-unsplash.jpg" class="img-fluid clip2 rounded-start w-100 " style="height: 400px;" alt="...">
+      </div>
+
+      <div class="col-md-8 col-sm-12">
+        <div class="card-body p-5">
+          <span class="card-title fs-2" style="color: #08567a;">Podcast Title</span>
+          <p class="card-text mb-1"><small class="text-body-secondary"><i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2020</small></p>
+          <div class="line"></div>
+          <p class="card-text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo modi ab porro cupiditate dolor sapiente, qui tenetur iste repellendus obcaecati excepturi distinctio sint nesciunt quo doloremque laudantium mollitia corrupti Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minima architecto, nesciunt, ex aliquam.</p>
+          
+          <div style="margin-top: 80px;">
+            <button type="button" class="btn btn-secondary py-0 text-dark"><i class="fa-solid fa-tag"></i>Product</button>
+            <button type="button" class="btn btn-secondary py-0 text-dark "><i class="fa-solid fa-clock"></i>55 mins.</button>
+            <button type="button" class="btn btn-secondary py-0 btn3"><i class="fa-solid fa-play"></i>Play Episode</button>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
+  <div class="card card3 grid-bg mb-4 m-auto">
+    <div class="row g-5 ">
+      <div class="col-md-8 col-sm-12">
+        <div class="card-body p-5">
+          <span class="card-title fs-2" style="color: #08567a;">Podcast Title</span>
+          <p class="card-text mb-1"><small class="text-body-secondary"><i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2020</small></p>
+          <div class="line"></div>
+          <p class="card-text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo modi ab porro cupiditate dolor sapiente, qui tenetur iste repellendus obcaecati excepturi distinctio sint nesciunt quo doloremque laudantium mollitia corrupti Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minima architecto, nesciunt, ex aliquam.</p>
+          
+          <div style="margin-top: 80px;">
+            <button type="button" class="btn btn-secondary py-0 text-dark"><i class="fa-solid fa-tag"></i>Product</button>
+            <button type="button" class="btn btn-secondary py-0 text-dark "><i class="fa-solid fa-clock"></i>55 mins.</button>
+            <button type="button" class="btn btn-secondary py-0 btn3"><i class="fa-solid fa-play"></i>Play Episode</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <img src="/images/axp-photography-__VGmXuVTBA-unsplash.jpg" class="img-fluid clip rounded-end w-100 " style="height: 400px;" alt="...">
+      </div>
+    </div>
+  </div>
+
+  <div class="card card3 grid-bg mb-4 m-auto">
+    <div class="row g-5 ">
+      <div class="col-md-4 col-sm-12">
+        <img src="/images/axp-photography-__VGmXuVTBA-unsplash.jpg" class="img-fluid clip2 rounded-start w-100 " style="height: 400px;" alt="...">
+      </div>
+
+      <div class="col-md-8 col-sm-12">
+        <div class="card-body p-5">
+          <span class="card-title fs-2" style="color: #08567a;">Podcast Title</span>
+          <p class="card-text mb-1"><small class="text-body-secondary"><i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2020</small></p>
+          <div class="line"></div>
+          <p class="card-text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo modi ab porro cupiditate dolor sapiente, qui tenetur iste repellendus obcaecati excepturi distinctio sint nesciunt quo doloremque laudantium mollitia corrupti Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minima architecto, nesciunt, ex aliquam.</p>
+          
+          <div style="margin-top: 80px;">
+            <button type="button" class="btn btn-secondary py-0 text-dark"><i class="fa-solid fa-tag"></i>Product</button>
+            <button type="button" class="btn btn-secondary py-0 text-dark "><i class="fa-solid fa-clock"></i>55 mins.</button>
+            <button type="button" class="btn btn-secondary py-0 btn3"><i class="fa-solid fa-play"></i>Play Episode</button>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="p-3 gradient-text text-center  rounded">
+    <h2 class="fs-1 ">JOIN US</h2>
+  </div>
+  
+  <div class="container row g-1 m-auto mb-3 ">
+      <div class="col-lg-3  text-center bg-white ms-4 rounded card3" style="width: 300px; height: 200px;">
+        <p class="text-info fs-4">Subscribe Now</p>
+        <i class="fa-brands fa-square-twitter text-info" style="font-size: 100px;"></i>
+        <p class="text-info fs-4">Go to link</p>
+      </div>
+  
+      <div class="col-lg-3  text-center bg-white ms-4 rounded card3" style="width: 300px; height: 200px;">
+        <p class="text-info fs-4">Follow</p>
+        <i class="fa-brands fa-square-whatsapp text-success"  style="font-size: 100px;" ></i>
+        <p class="text-info fs-4">Go to link</p>
+      </div>
+  
+      <div class="col-lg-3 text-center bg-white ms-4 rounded card3" style="width: 300px; height: 200px;">
+        <p class="text-info fs-4">Like the page</p>
+        <i class="fa-brands fa-linkedin text-primary" style="font-size: 100px;"></i>
+        <p class="text-info fs-4">Go to link</p>
+      </div>
+  
+      <div class="col-lg-3  text-center bg-white ms-4 rounded card3" style="width: 300px; height: 200px;">
+        <p class="text-info fs-4">Watch videos</p>
+        <i class="fa-brands fa-square-instagram text-danger-emphasis" style="font-size: 100px;" ></i>
+        <p class="text-info fs-4">Go to link</p>
+      </div>  
+    </div>
+  
+  <div class="footer row bg-info p-2">
+
+    <div class="col-lg-4 col-sm-12 text-center text-white " >
+      <div class="border-top border-bottom p-3">
+        <img src="/images/2.png" class="rounded-circle me-2" style="width: 70px; height: 70;" alt="..">
+        <span class=" fs-5">Good Company</span>
+      </div>
+      <div class="p-2">
+        <p>Tel: 0000-000-000</p>
+        <p>Address: EGYPT</p>
+        <p>Fax: 0000-000-000</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-sm-12 text-center text-white " >
+      <div class="border-top border-bottom p-3">
+        <img src="/images/2.png" class="rounded-circle me-2" style="width: 70px; height: 70;" alt="..">
+        <span class=" fs-5">Important links</span>
+      </div>
+      <div class="p-2">
+        <a href=""><p>Visit us</p></a>
+        <a href=""><p>Take a look</p></a>
+        <a href=""><p>Your health is more important</p></a>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-sm-12 text-center text-white " >
+      <div class="border-top border-bottom p-3">
+        <img src="/images/2.png" class="rounded-circle me-2" style="width: 70px; height: 70;" alt="..">
+        <span class=" fs-5">Vision</span>
+      </div>
+      <div class="p-2">
+        <p>Services for all</p>
+        <p>Provide best services</p>
+        <p>You will be better than before</p>
+      </div>
+    </div>
+    
+    <div class="border-top border-bottom p-3 text-center mb-5" >
+      <p class="gradient-text fs-4">COPYRIGHT &copy; SHIMAAHUSSIEN EL SAID, GOOD COMPANY. ALL RIGHTS</p>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
+
+
+
+
+    
